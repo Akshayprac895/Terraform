@@ -86,13 +86,13 @@ jobs:
 
     #Sonar_qube integration for code check and vul scan
     - name: SonarQube Scan
-        uses: sonarsource/sonarqube-scan-action@master
-        with:
+      uses: sonarsource/sonarqube-scan-action@master
+      with:
           projectBaseDir: .
           args: >
             -Dsonar.organization=my-org
             -Dsonar.projectKey=my-tf-scan-1012434
-        env:
+      env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
