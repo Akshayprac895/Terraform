@@ -6,7 +6,7 @@ resource "aws_instance" "main" {
   key_name = var.key_name
 
 
-  tag = {
+  tags = {
     name = var.instance_name
   }
 }
