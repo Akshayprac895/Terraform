@@ -1,3 +1,7 @@
+provider "aws" {
+    region = "us-east-1"
+}
+
 
 module "module_ec2" {
   source        = "./terraform/module_ec2"  # path to your module_ec2
@@ -12,11 +16,11 @@ module "module_ec2" {
 #resource "aws_instance" "main" {
 #  ami =  var.ami_id
 #  instance_type = var.instance_type
-#}
+# }
 
 
 
-  tags = {
-    name = var.instance_name
-  }
-}
+# tags = {
+#    name = var.instance_name
+#  }
+
