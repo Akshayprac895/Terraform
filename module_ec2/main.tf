@@ -13,5 +13,5 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
-    description = -"instance type"
+    description = "instance type"
 }
