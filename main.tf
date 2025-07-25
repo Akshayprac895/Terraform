@@ -1,3 +1,6 @@
+provider "aws" {
+   region = "us-east-1"
+}
 
 
 module "module_ec2" {
@@ -8,9 +11,6 @@ module "module_ec2" {
 }
 
 
-# provider "aws" {
-#    region = "us-east-1"
-# }
 
 #resource "aws_instance" "main" {
 #  ami =  var.ami_id
