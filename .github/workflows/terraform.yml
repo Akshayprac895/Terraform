@@ -87,16 +87,16 @@ jobs:
         aws-region: us-east-1
 
     #Sonar_qube integration for code check and vul scan
-    - name: SonarQube Scan
-      uses: sonarsource/sonarqube-scan-action@master
-      with:
-          projectBaseDir: .
-          args: >
-            -Dsonar.organization=my-org
-            -Dsonar.projectKey=my-tf-scan-1012434
-      env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+    # - name: SonarQube Scan
+    #   uses: sonarsource/sonarqube-scan-action@master
+    #   with:
+    #       projectBaseDir: .
+    #       args: >
+    #         -Dsonar.organization=my-org
+    #         -Dsonar.projectKey=my-tf-scan-1012434
+    #   env:
+    #       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    #       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
