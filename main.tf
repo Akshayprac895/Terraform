@@ -1,5 +1,6 @@
-
-
+provider "aws" {
+  region =  "us-east-1"
+}
 
 module "module_ec2" {
   source        = "./module_ec2"  # path to your module_ec2
