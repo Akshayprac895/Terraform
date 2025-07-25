@@ -1,6 +1,6 @@
-provider "aws" {
-  region =  "us-east-1"
-}
+#provider "aws" {
+#  region =  "us-east-1"
+#}
 
 # if you want to deploy the ec2 or any resources in multi region then you have setup sturcture like this 
 
